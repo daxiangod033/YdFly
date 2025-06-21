@@ -1,3 +1,24 @@
+//MIT License
+
+// Copyright (c) 2025 小羊搞飞机ydfly
+
+// Permission is hereby granted, free of charge, to any person obtaining a copy
+// of this software and associated documentation files (the "Software"), to deal
+// in the Software without restriction, including without limitation the rights
+// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+// copies of the Software, and to permit persons to whom the Software is
+// furnished to do so, subject to the following conditions:
+
+// The above copyright notice and this permission notice shall be included in all
+// copies or substantial portions of the Software.
+
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+// SOFTWARE.
 
 /*******************************************************************/
 //                 ydfly无人机遥控器                                 /
@@ -55,7 +76,7 @@ private:
 public:
 uint8_t broadcastAddress[6] = {0xE4, 0x65, 0xB8, 0x0C, 0x03, 0xF4}; //有刷Mac地址：E4:65:B8:0C:03:F4
 
-  // uint8_t broadcastAddress[6] = {0x40, 0xF5, 0x20, 0x24, 0xC5, 0x46}; // 无刷MAC地址：40:F5:20:24:C5:46
+
 
   // 用于发送数据的结构体
   struct message
@@ -72,7 +93,7 @@ uint8_t broadcastAddress[6] = {0xE4, 0x65, 0xB8, 0x0C, 0x03, 0xF4}; //有刷Mac�
   void get_operate(); //获取操作
   void draw_oper();//绘制摇杆位置
   void boot();        //引导
-  void OS();          //系统
+  void fly();          //系统
 };
 
 Clicker::Clicker(/* args */)
@@ -191,7 +212,7 @@ void Clicker::boot()
 
 }
 
-void Clicker::OS()
+void Clicker::fly()
 {
   /*遥控器系统*/
 
@@ -310,5 +331,5 @@ void setup()
 
 void loop()
 {
-  clicker.OS(); //进入操作系统
+  clicker.fly(); 
 }
