@@ -15,9 +15,8 @@
 电池 520mAh 3.8v 80C高倍率锂电池  建议用穿越机电池
 
 # 接线图
-
-
-
+<img src="https://github.com/daxiangod033/YdFly/blob/main/%E6%8E%A5%E7%BA%BF%E5%9B%BE.bmp">
+<img src="">
 
 
 项目代码整理中...
