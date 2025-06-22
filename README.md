@@ -16,7 +16,7 @@
 
 # 接线图
 <img src="https://github.com/daxiangod033/YdFly/blob/main/%E6%8E%A5%E7%BA%BF%E5%9B%BE.bmp">
-<img src="">
+<img src="https://github.com/daxiangod033/YdFly/blob/main/%E7%94%B5%E6%9C%BA%E9%A9%B1%E5%8A%A8%E7%94%B5%E8%B7%AF.png">
 
 
 项目代码整理中...
